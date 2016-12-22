@@ -9,6 +9,8 @@ class AuthorAdmin(admin.ModelAdmin):
 
 class AuthorInline(admin.StackedInline):
     model = Book.authors.through
+    min_num = 1 
+    
     
 
 class BookAdmin(admin.ModelAdmin):

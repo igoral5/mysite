@@ -12,7 +12,7 @@ class AuthorInline(admin.StackedInline):
 
 class BookAdmin(admin.ModelAdmin):
     list_display = ('title', 'year', 'isbn')
-    inline = (AuthorInline,)
+    inlines = (AuthorInline,)
 
 
 admin.site.register(Book, BookAdmin)

@@ -1,0 +1,16 @@
+/bin/
+/include/
+/lib/
+/lib64
+/share/
+/new_cities.txt
+/new_countries.txt
+/pip-selfcheck.json
+/uwsgi.sock
+__pycache__
+*.pyc
+*.pyo
+/.project
+/.pydevproject
+/.settings/
+

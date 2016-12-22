@@ -7,7 +7,7 @@ class AuthorAdmin(admin.ModelAdmin):
     list_display = ('last_name', 'first_name', 'middle_name', 'born')
 
 
-class AuthorInline(admin.StackedInline):
+class AuthorInline(admin.TabularInline):
     model = Book.authors.through
     extra = 0
     verbose_name='Автор'

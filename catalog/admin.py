@@ -9,9 +9,11 @@ class AuthorAdmin(admin.ModelAdmin):
 
 class AuthorInline(admin.StackedInline):
     model = Book.authors.through
+    
 
 class BookAdmin(admin.ModelAdmin):
     list_display = ('title', 'year', 'isbn')
+    exclude = ('authors',)
     inlines = (AuthorInline,)
 
 

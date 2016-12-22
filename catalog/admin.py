@@ -7,7 +7,6 @@ class AuthorAdmin(admin.ModelAdmin):
     list_display = ('last_name', 'first_name', 'middle_name', 'born')
 
 class BookAdmin(admin.ModelAdmin):
-    model = Book
     list_display = ('title', 'year', 'isbn')
 
 

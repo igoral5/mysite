@@ -9,7 +9,10 @@ class AuthorAdmin(admin.ModelAdmin):
 
 class AuthorInline(admin.StackedInline):
     model = Book.authors.through
-    max_num = 1 
+    extra = 0
+    verbose_name='Автор'
+    verbose_name_plural='Авторы'
+     
     
     
 

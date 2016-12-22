@@ -9,7 +9,7 @@ class AuthorAdmin(admin.ModelAdmin):
 
 class AuthorInline(admin.StackedInline):
     model = Book.authors.through
-    min_num = 1 
+    max_num = 1 
     
     
 

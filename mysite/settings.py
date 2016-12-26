@@ -25,7 +25,7 @@ SECRET_KEY = 'ou!=89)lqs+14x8$)j#bax#xcb1b30_oq566d08^80r!08&&1&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['wks-alimov.int.pv.km', 'wks-alimov', 'localhost', '127.0.0.1']
 
 
 # Application definition
